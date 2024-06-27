@@ -43,7 +43,7 @@ g = torch.Generator().manual_seed(2136812323)
 # print(itos[idx])
 
 P = (N+20).float()
-P = P/P.sum(1,keepdim=True)
+P = P/P.sum(1,keepdims=True)
 print(P[0].sum())
 for i in range(20):
     idx = 0
